@@ -1,0 +1,533 @@
+
+/* -------------------------------------------------------------------------- */
+
+/*	Coordinates Style
+/* -------------------------------------------------------------------------- */
+
+/* Single
+----------------------------------------*/
+.coordinate-header {
+	margin-bottom: 24px;
+}
+.coordinate-header .entry-title {
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: capitalize;
+}
+.coordinate-content {
+	margin-bottom: 24px;
+}
+#itemimg {
+	margin: 0 -1em 24px;
+}
+#itemimg .entry-img {
+	margin-top: 0;
+}
+.is-coordniates.coordinate-column,
+.other-coordniates.coordinate-column {
+	display: block!important;
+}
+.coordinate-column .model-block {
+	color: #777;
+	padding: 0 0 24px;
+	border-bottom: 1px solid #ddd;
+	margin: 0 0 38px;
+}
+.coordinate-column .model-block a {
+	display: block;
+	-webkit-transition: all .2s .1s ease-in-out;
+	transition: all .2s .1s ease-in-out;
+}
+.coordinate-column .model-block a:hover {
+	display: block;
+	margin: -5px 0 0;
+	padding: 0 0 5px;
+}
+.coordinate-column .modle-block .read {
+	color: #777;
+	margin: 0 0 8px;
+}
+.coordinate-column .model-block .name {
+	font-weight: 600;
+}
+.coordinate-column .sub-header {
+	text-align: center;
+	margin: 0 0 24px;
+}
+.coordinate-column .sub-title {
+	font-size: 16px;
+	line-height: 1.3;
+	font-weight: 100;
+	display: inline-block;
+	color: #777;
+}
+.coordinate-column .entry-content {
+	color: #777;
+	margin: 0 0 34px;
+}
+.coordinate_all_price {
+	display: none;
+	margin: 0 0 34px;
+}
+.coordinate_all_price dl {
+	display: flex;
+	padding: 12px 13px;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #efefef;
+}
+.coordinate_all_price dl dt {
+	color: #666;
+}
+.coordinate_all_price dl dd {
+	color: #444;
+	font-size: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
+	font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'sans-serif';
+	font-weight: 600;
+}
+.coordinate_all_price dl dd em {
+	font-size: 10px;
+	font-weight: 100;
+}
+.coordinate_all_price dl dd .tax_inc_block {
+	display: block;
+	padding-right: 4px;
+	text-align: right;
+	font-size: 13px;
+	font-weight: normal;
+	width: 100%;
+}
+.coordinate_all_price dl dd .tax_inc_block em {
+	margin-right: 5px;
+}
+.coord_item_list {
+	margin: 0 0 38px;
+}
+.coord_item_list ul li {
+	padding: 0 0 24px;
+	margin: 0 0 24px;
+	border-bottom: 1px solid #ddd;
+	display: flex;
+	justify-content: space-between;
+}
+.coord_item_list .tmnimg {
+	width: 120px;
+	height: 120px;
+	position: relative;
+	overflow: hidden;
+}
+.coord_item_list .item_detail {
+	width: calc(100% - 144px);
+	color: #444;
+	position: relative;
+	padding: 0 0 1.8em;
+}
+.coord_item_list .tmnimg:before {
+	content: '';
+	display: block;
+	margin-top: 100%;
+}
+.coord_item_list .tmnimg img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	object-fit: cover;
+	-webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.coord_item_list .item_detail .title {
+	line-height: 1.5;
+	margin: 0 0 8px;
+}
+.coord_item_list .item_detail .price {
+	font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'sans-serif';
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+}
+.coord_item_list .item_detail .field_cprice {
+	margin: 0 8px 0 0;
+	padding: 0;
+	opacity: .6;
+	font-size: 12px;
+	text-decoration: line-through;
+}
+.coord_item_list .item_detail .price em {
+	font-size: 11px;
+}
+.coord_item_list .item_detail .item_link {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.coord_item_list .tax_inc_block {
+	margin-bottom: 8px;
+	font-size: 12px;
+	display: flex;
+	align-items: center;
+}
+.coord_item_list .tax_inc_block em {
+	margin-right: 3px;
+}
+.coord_item_list .item_detail .item_link a {
+	display: inline-block;
+	padding: 5px 8px;
+	background-color: #666;
+	color: #fff;
+	line-height: 1.2;
+	font-size: 12px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-khtml-border-radius: 2px; 
+	border-radius: 2px;
+}
+.same_coordinate,
+.coordinate_cloud {
+	margin: 0 0 38px;
+}
+.same_coordinate .model_title {
+	font-size: 16px;
+	line-height: 1.3;
+	font-weight: 100;
+	display: inline-block;
+	color: #777;
+}
+.coordinate_cloud .coord_tags {
+	font-size: 16px;
+	line-height: 1.3;
+	font-weight: 100;
+	display: inline-block;
+	color: #777;
+}
+
+/* .same_coordinate
+----------------------------------------*/
+.same_coordinate ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-right: -9px;
+}
+.same_coordinate ul li {
+	margin: 0 9px 28px 0;
+	width: calc(33.333% - 9px);
+}
+.same_coordinate ul li a {
+	display: block;
+}
+.same_coordinate ul li a p {
+	width: 100%;
+	font-size: 12px;
+}
+
+/*  .coordinate_cloud 
+----------------------------------------*/
+.coordinate_cloud ul {
+	display: flex;
+	margin-right: -1em;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.coordinate_cloud ul li {
+	margin: 0 1em 1em 0;
+}
+.coordinate_cloud ul li a {
+	background-color: #efefef;
+	display: inline-block;
+	padding: 5px 10px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;
+	border-radius: 20px;
+	line-height: 1.2;
+}
+
+/*  .single-coord-navigation 
+----------------------------------------*/
+.single-coord-navigation {
+	margin: 0 calc(-1em - 1px);
+	display: flex;
+	justify-content: space-between;
+}
+.single-coord-navigation .nav_block {
+	width: 50%;
+	-webkit-transition: all .2s .1s ease-in-out;
+	transition: all .2s .1s ease-in-out;
+}
+.single-coord-navigation .nav_block:hover {
+	margin-top: -5px;
+	padding-bottom: 5px;
+}
+.single-coord-navigation .prevpost {
+	margin-left: 50%;
+}
+.single-coord-navigation .nextpost + .prevpost {
+	margin-left: 0%;
+}
+.single-coord-navigation a {
+	display: flex;
+	align-items: center;
+	padding: 0px;
+	border: 1px solid #ddd;
+}
+.single-coord-navigation .prevpost a {
+	flex-flow: row-reverse;
+	text-align: right;
+	margin-left: -1px;
+}
+.single-coord-navigation .thumbnail {
+	max-width: 60px;
+}
+.text{
+	font-size: 10px;
+}
+.single-coord-navigation .thumbnail img {
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-khtml-border-radius: 50%;
+	border-radius: 50%;
+}
+.single-coord-navigation .nextpost .thumbnail {
+	margin-right: 8px;
+}
+.single-coord-navigation .prevpost .thumbnail {
+	margin-left: 8px;
+}
+.single-coord-navigation .text span {
+	display: block;
+	line-height: 1.4;
+}
+.single-coord-navigation .text .name {
+	font-weight: 600;
+}
+
+/*  Model List 
+----------------------------------------*/
+.model-list-header {
+	display: flex;
+	align-items: center;
+}
+.model-list-header .thumbnail {
+	margin-right: 1em;
+	width: 80px;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-khtml-border-radius: 50%;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.entry-head.title-small.model-list-header .model-name {
+	display: block;
+	margin-top: 0;
+	font-size: 28px;
+	font-weight: 700;
+	text-transform: capitalize;
+}
+.model-list-header .model-info span {
+	display: inline-block;
+	font-size: 14px;
+}
+.model-list-header .model-info .height:before {
+	margin: 0 4px;
+	display: inline-block;
+	content: "/";
+}
+.coordinate-column .list .title {
+	margin-bottom: 4px;
+	font-size: 14px;
+	font-weight: 700;
+}
+.coordinate-column .list .data {
+	margin-top: 4px;
+	font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'sans-serif';
+	font-size: 13px;
+	letter-spacing: .5px;
+}
+/*  Text & Audio List 
+----------------------------------------*/
+.cordi-text{
+	font-size: 1em;
+	font-weight: bold;
+	padding-bottom: 40px;
+	border-bottom: 1px dotted #ddd;
+}
+.content-center .wp-block-audio{
+	padding-bottom: 40px;
+	border-bottom: 1px solid #ddd;
+}
+
+/**
+ * 16.1 Mobile Large 620px
+ */
+@media screen and (min-width: 38.75em) {
+
+	/* Single
+	----------------------------------------*/
+
+	.coordinate-header {
+		width: 100%;
+	}
+	.coordinate-header .entry-title {
+		font-size: 24px;
+	}
+	.coordinate-content {
+		margin-bottom: 36px;
+	}
+	#itemimg {
+		margin: 0 0 24px;
+		width: 54.746%;
+	}
+	.is-coordniates.coordinate-column {
+		margin: 0 0 24px;
+		width: 40.509%;
+	}
+	.single-coordinates article.coordinates {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.other-coordniates.coordinate-column {
+		width: 100%;
+		margin: 0 0 24px;
+	}
+	.single-coord-navigation .nextpost a:before {
+		content: '';
+		width: 8px;
+		height: 8px;
+		border: 0px;
+		border-top: solid 1px #666;
+		border-left: solid 1px #666;
+		-ms-transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+		margin-right: 6px;
+	}
+	.single-coord-navigation .prevpost a:before {
+		content: '';
+		width: 8px;
+		height: 8px;
+		border: 0px;
+		border-top: solid 1px #666;
+		border-right: solid 1px #666;
+		-ms-transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		transform: rotate(45deg);
+		margin-left: 6px;
+	}
+	.single-coord-navigation a {
+		padding: 10px;
+	}
+	.single-coord-navigation .text span {
+		display: inline-block;
+		margin: 0 0.5em;
+	}
+	.text{
+		font-size: 90%;
+	}
+	.single-coord-navigation {
+		margin: 0;
+	}
+	.is-coordniates .sub-header {
+		text-align: left;
+	}
+
+}
+
+/**
+  * 16.2 Tablet Small 740px
+  */
+@media screen and (min-width: 46.25em) {
+	.same_coordinate ul li {
+		width: calc(25% - 9px);
+	}
+}
+
+/**
+  * 16.3 Tablet Large 880px
+  */
+@media screen and (min-width: 55em) {
+}
+
+/**
+  * 16.4 Tablet Large 1000px
+  */
+@media screen and (min-width: 62.5em) {
+
+	#content > .hentry.coordinates {
+		max-width: inherit;
+	}
+	.is-coordniates.coordinate-column {
+		margin: 0 0 60px;
+	}
+	.coordinate-content {
+		margin-bottom: 48px;
+		width: 100%;
+	}
+	.same_coordinate,
+	.coordinate_cloud {
+		margin: 0 0 60px;
+	}
+	.coordinate-column .entry-content p {
+		font-size: 13px;
+	}
+	.coordinate-column .thumbnail {
+		max-width: 55px;
+	}
+    .single-coord-navigation .nav_block {
+	    width: 30%;
+    }
+	.single-coord-navigation a {
+		padding: 24px;
+		position: relative;
+		justify-content: center;
+	}
+	.single-coord-navigation .nextpost a:before {
+		width: 10px;
+		height: 10px;
+		position: absolute;
+		top: 50%;
+		left: 25px;
+		-ms-transform: rotate(-45deg) translate(0%, -50%);
+		-webkit-transform: rotate(-45deg) translate(0%, -50%);
+		transform: rotate(-45deg) translate(0%, -50%);
+	}
+	.single-coord-navigation .prevpost a:before {
+		width: 10px;
+		height: 10px;
+		position: absolute;
+		top: 50%;
+		right: 25px;
+		-ms-transform: rotate(-45deg) translate(0%, -50%);
+		-webkit-transform: rotate(-45deg) translate(0%, -50%);
+		transform: rotate(45deg) translate(0%, -50%);
+	}
+	.single-coord-navigation .nextpost .thumbnail {
+		margin-right: 1.5em;
+	}
+	.single-coord-navigation .prevpost .thumbnail {
+		margin-left: 1.5em;
+	}
+	.single-coord-navigation .text .height {
+		font-size: 90%;
+	}
+	.same_coordinate ul li {
+		width: calc(20% - 9px);
+	}
+	.coordinate_all_price dl {
+		padding: 16px 24px;
+	}
+}
+@media screen and (min-width: 1024px) {
+	#itemimg {
+		width: 530px;
+	}
+	.is-coordniates.coordinate-column {
+		width: calc(100% - 530px - 4.745%);
+	}   
+}
