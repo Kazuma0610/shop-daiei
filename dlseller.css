@@ -1,0 +1,315 @@
+
+/* -------------------------------------------------------------------------- */
+
+/*	WCEX DL Seller Style
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+
+/*	wc_item_single.php
+/* -------------------------------------------------------------------------- */
+
+.is-cart {
+	position: relative;
+}
+.dlseller,
+.dlseller tbody,
+.dlseller tr,
+.dlseller th,
+.dlseller td {
+	display: block;
+	width: 100%;
+}
+.dlseller th,
+.dlseller td {
+	text-align: left;
+	padding-left: 6px;
+}
+.dlseller th {
+	font-size: 11px;
+}
+.dlseller td {
+	margin-bottom: 12px;
+	padding-bottom: 12px;
+	border-bottom: 1px solid #ddd;
+}
+.dlseller tr:last-child td {
+	margin-bottom: 0;
+}
+.dlseller.data {
+	margin-bottom: 12px;
+	padding-top: 15px;
+	border-top: 1px solid #ddd;
+}
+.dlseller.charging {
+	margin-bottom: 30px;
+}
+
+.skuform {
+	position: relative;
+}
+.skuform .field_frequency {
+	background-color: #666;
+	display: inline-block;
+	padding: 2px 8px;
+	color: #fff;
+	font-size: 11px;
+	border-radius: 4px;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/*	wc_sku_select.php
+/*	wc_sku_select_service.php
+/* -------------------------------------------------------------------------- */
+
+.dl-sku .dlseller {
+	margin-bottom: 24px;
+	padding-top: 15px;
+	border-top: 1px solid #ddd;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+/*	customer_page.php
+/* -------------------------------------------------------------------------- */
+
+.is-member #nav {
+	margin-top: 8px;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/*	delivery_page.php
+/* -------------------------------------------------------------------------- */
+
+table#dlseller_terms {
+	margin-bottom: 20px;
+}
+table#dlseller_terms tr:after {
+	display: none;
+}
+table#dlseller_terms td {
+	margin-bottom: 12px; 
+	padding: 0 0 12px;
+}
+table#dlseller_terms td .dlseller_terms {
+	padding: 6px;
+	width: 100%;
+	height: 136px;
+	border: 1px solid #aaa;
+	border-radius: 4px;
+	vertical-align: bottom;
+	overflow-y: scroll;
+}
+@media screen and (min-width: 55em) {
+	table#dlseller_terms th {
+		vertical-align: text-top;		
+	}
+	table#dlseller_terms td {
+		padding-right: 48px;
+	}
+}
+
+/* -------------------------------------------------------------------------- */
+
+/*	wc_completion_page.php
+/* -------------------------------------------------------------------------- */
+
+#wc_ordercompletion .dllist {
+	background-color: #fafafa;
+	margin-top: 24px;
+	padding: 12px;
+}
+#wc_ordercompletion .dllist li {
+	overflow: hidden;
+	margin-bottom: 12px;
+	padding: 0 5px 12px;
+	border-bottom: 1px solid #ddd;
+}
+#wc_ordercompletion .dllist li:last-child {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	border-bottom: none;
+}
+#wc_ordercompletion .dllist .thumb {
+	float: left;
+	margin-right: 15px;
+	max-width: 90px;
+}
+#wc_ordercompletion .dllist .item_info_list td {
+	margin-bottom: 6px;
+	padding: 0;
+	border: none;
+}
+#wc_ordercompletion .dllist .item_info_list p {
+	padding-top: 8px;
+	clear: both;
+	font-size: 12px;
+	line-height: 1.5;
+	text-align: center;
+}
+#wc_ordercompletion .redownload_button {
+	background-color: #ccc;
+	display: flex;
+	padding: 10px 20px;
+	color: #fff;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	max-width: 300px;
+	margin: 0 calc(50% - 150px);
+}
+#wc_ordercompletion .dlseller {
+	padding-left: 105px;
+}
+#wc_ordercompletion .dlseller + .dlseller {
+	margin-bottom: 20px;
+}
+#wc_ordercompletion .dlseller th,
+#wc_ordercompletion .dlseller td {
+    padding-left: 0;
+}
+#wc_ordercompletion .redownload_button:before {
+	content: '';
+	background-image: url('assets/images/download.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 17px;
+	height: 17px;
+	display: block;
+	margin-right: 5px;
+}
+
+
+/**
+ * 16.1 Mobile Large 620px
+ */
+@media screen and (min-width: 38.75em) {
+
+
+	/* -------------------------------------------------------------------------- */
+
+	/*	wc_completion_page.php
+	/* -------------------------------------------------------------------------- */
+
+	#wc_ordercompletion .dllist {
+		margin-top: 24px;
+	}
+	#wc_ordercompletion .dllist li {
+		margin-bottom: 24px;
+		padding-bottom: 24px;
+	}
+
+	#wc_ordercompletion .send {
+		justify-content: center;
+	}
+
+	#wc_ordercompletion .dlseller tr {
+		display: flex;
+		flex-wrap: nowrap;
+	}
+
+}
+
+
+/**
+* 16.3 Tablet Large 880px
+*/
+@media screen and (min-width: 55em) {
+
+
+	.dlseller {
+		display: table;
+	}
+	.dlseller tbody {
+		display: table-row-group;
+	}
+	.dlseller tr {
+		display: table-row;
+	}
+	.dlseller th,
+	.dlseller td {
+		display: table-cell;
+		padding: 12px 6px;
+		border-top: 1px solid #e8e8e8;
+		border-bottom: 1px solid #e8e8e8;
+		vertical-align: middle;
+	}
+	.dlseller th {
+		width: 40%;
+	}
+	.dlseller td {
+		padding-left: 24px;
+		font-size: 13px;
+		width: 60%;
+	}
+	.dlseller.data {
+		margin-bottom: 20px;
+		padding-top: 0;
+		border-top: none;
+	}
+	.dlseller.charging th,
+	.dlseller.charging td {
+		padding: 12px;
+		border: 1px solid #e8e8e8;
+	}
+	.dlseller.charging th {
+		background-color: #e8e8e8;
+	}
+	
+	/* -------------------------------------------------------------------------- */
+
+	/*	customer_page.php
+	/* -------------------------------------------------------------------------- */
+
+	.is-member .customer_form {
+		margin-bottom: 24px;
+	}
+	.is-member #nav {
+		margin-left: 190px;
+	}
+
+
+	/* -------------------------------------------------------------------------- */
+
+	/*	wc_completion_page.php
+	/* -------------------------------------------------------------------------- */
+
+	#wc_ordercompletion .dllist {
+		margin-top: 36px;
+		padding: 24px;
+	}
+	#wc_ordercompletion .dllist .dlseller tbody {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	#wc_ordercompletion .dllist .dlseller tr {
+		width: 50%;
+	}
+	#wc_ordercompletion .dllist .dlseller,
+	#wc_ordercompletion .dllist .dlseller th,
+	#wc_ordercompletion .dllist .dlseller td {
+		display: block;
+	}
+	#wc_ordercompletion .dllist .dlseller th,
+	#wc_ordercompletion .dllist .dlseller td {
+		padding: 0;
+		font-size: 13px;
+		border: none;
+	}
+	#wc_ordercompletion .dllist .thumb {
+		margin-right: 24px;
+		max-width: 150px;
+	}
+	#wc_ordercompletion .dllist .item_info_list p {
+		clear: none;
+		margin-left: 0;
+		font-size: 13px;
+	}
+	#wc_ordercompletion .dlseller {
+		padding-left: 185px;
+	}
+
+}
